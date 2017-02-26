@@ -19,7 +19,7 @@ RUN   pip install sphinx-git
 RUN   pip install sphinxcontrib-programoutput
 RUN   pip install sphinxcontrib-plantuml
 
-RUN curl -O -J -L https://sourceforge.net/projects/plantuml/files/plantuml.jar/download > /opt/plantuml.jar
+RUN cd /opt && curl -O -J -L https://sourceforge.net/projects/plantuml/files/plantuml.jar/download
 ENV PLANTUML_JAR /opt/plantuml.jar
 
 CMD bash
