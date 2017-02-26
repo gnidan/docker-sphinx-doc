@@ -8,6 +8,7 @@ RUN apt-get install -y python-pip
 RUN apt-get install -y texlive texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended
 RUN apt-get install -y git wget make build-essential graphviz
 RUN apt-get install -y openjdk-7-jre
+RUN apt-get install -y curl
 
 RUN   pip install Sphinx
 RUN   pip install sphinx_rtd_theme
